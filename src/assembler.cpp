@@ -207,7 +207,7 @@ int main()
     sections[".text"].append((uint8_t *)"\x48\x8b\x05\x00\x00\x00\x00", 7);                                                         // movq	std_out(%rip), %rax
     sections[".text"].append((uint8_t *)"\x48\x89\xc1", 3);                                                                         // movq	%rax, %rcx
     relocate_symbol(".data", ".text", sections, sym_tab, 0x3 + sections[".text"].data.size(), IMAGE_REL_AMD64_REL32);               //      RELOCATION: str
-    sections[".text"].append((uint8_t *)"\x48\x8b\x15\x00\x00\x00\x00", 7);                                                         // movq	 , %rdx
+    sections[".text"].append((uint8_t *)"\x48\x8b\x15\x00\x00\x00\x00", 7);                                                         // movq	str(%rip), %rdx
     relocate_symbol(".data", ".text", sections, sym_tab, 0x2 + sections[".text"].data.size(), IMAGE_REL_AMD64_REL32);               //      RELOCATION: len
     sections[".text"].append((uint8_t *)"\x8b\x05\x08\x00\x00\x00", 6);                                                             // movl	len(%rip), %eax
     sections[".text"].append((uint8_t *)"\x41\x89\xc0", 3);                                                                         // movl	%eax, %r8d
