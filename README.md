@@ -1,7 +1,6 @@
 # README.md
 
 Currently only assembles to Windows COFF object files. I will try to add support for ELF
-
 Currently only assembles x86_64 machine code
 
 ## Resources
