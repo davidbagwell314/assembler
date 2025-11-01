@@ -8,4 +8,5 @@ Currently only assembles x86_64 machine code
 
 https://learn.microsoft.com/en-us/windows/win32/debug/pe-format  
 https://wiki.osdev.org/X86-64_Instruction_Encoding  
+https://wiki.osdev.org/CPU_Registers_x86-64  
 https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html  

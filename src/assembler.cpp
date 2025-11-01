@@ -7,6 +7,7 @@
 #include <cstdint>
 
 #include <coff.h>
+#include <encoder.h>
 
 struct Label
 {
@@ -305,4 +306,8 @@ int main()
     std::ofstream fs("test\\main.obj", std::ios::out | std::ios::binary);
     fs.write((const char *)(complete_data.data()), complete_data.size());
     fs.close();
+
+    uint8_t *encoded_instruction = NULL;
+    std::size_t encoded_size;
+    encode(encoded_instruction, encoded_size);
 }
