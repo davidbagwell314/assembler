@@ -1,8 +1,8 @@
 # README.md
 
-Currently only assembles to Windows COFF object files. I will try to add support for ELF
+Currently only assembles to Windows COFF object files. I will try to add support for ELF (I wrote a simple ELF executable previously, however it was done manually so I didn't write an assembler for it)
 
-Currently only assembles x86_64 machine code
+Currently only assembles x86_64 machine code (once I can find a way to store all opcodes for each instruction because there are multiple opcodes and various bits of data for each instruction)
 
 ## Resources
 
